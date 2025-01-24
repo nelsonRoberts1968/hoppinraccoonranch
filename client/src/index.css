@@ -8,13 +8,8 @@
   }
 
   body {
-
-  body {
     @apply font-sans antialiased text-foreground;
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://images.unsplash.com/photo-1601659073992-e464153aab59?auto=format&fit=crop&q=80') no-repeat center center fixed;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://images.unsplash.com/photo-1444185540287-722a1dc3b4d3?auto=format&fit=crop&q=80') no-repeat center center fixed;
     background-size: cover;
-  }
-
-    @apply font-sans antialiased bg-background text-foreground;
   }
 }
