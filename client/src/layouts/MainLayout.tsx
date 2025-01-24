@@ -62,11 +62,12 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
               </button>
             </div>
 
-            <Sheet className="md:hidden">
-              <SheetTrigger className="p-2">
-                <Menu className="h-6 w-6" />
-              </SheetTrigger>
-              <SheetContent side="left" className="w-[240px] sm:w-[300px]">
+            <div className="md:hidden">
+              <Sheet>
+                <SheetTrigger className="p-2">
+                  <Menu className="h-6 w-6" />
+                </SheetTrigger>
+                <SheetContent side="left" className="w-[240px] sm:w-[300px]">
                 <div className="flex flex-col gap-4">
                   <div className="flex items-center gap-2">
                     <img src="/hop-icon.png" alt="Hop Icon" className="w-6 h-6" />
@@ -79,7 +80,8 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
                   </nav>
                 </div>
               </SheetContent>
-            </Sheet>
+              </Sheet>
+            </div>
           </div>
 
           {/* Main Content */}
