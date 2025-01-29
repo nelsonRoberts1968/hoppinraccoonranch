@@ -3,6 +3,12 @@ import { Link } from 'wouter';
 import { Menu, Bell, Settings, User } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
+
+
+
+
+
+
 interface MainLayoutProps {
   children: React.ReactNode;
 }
@@ -26,10 +32,11 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
 
         <div className="flex items-center gap-4 ml-auto">
           <Link href="/" className="px-2 py-1 hover:bg-accent rounded-md">Home</Link>
-          <Link href="/" className="px-2 py-1 hover:bg-accent rounded-md">Our Products</Link>
-          <Link href="/" className="px-2 py-1 hover:bg-accent rounded-md">Contact Us</Link>
-          <Link href="/" className="px-2 py-1 hover:bg-accent rounded-md">Shop Now</Link>
-          <Link href="/" className="px-2 py-1 hover:bg-accent rounded-md">FAQs</Link>
+          <Link href="/products" className="px-2 py-1 hover:bg-accent rounded-md">Our Products</Link>
+        
+          <Link href="/contactus" className="px-2 py-1 hover:bg-accent rounded-md">Contact Us</Link>
+          <Link href="/shop" className="px-2 py-1 hover:bg-accent rounded-md">Shop Now</Link>
+          <Link href="/faqs" className="px-2 py-1 hover:bg-accent rounded-md">FAQs</Link>
 
           <button className="p-2 hover:bg-accent rounded-full">
             <Bell className="h-5 w-5" />

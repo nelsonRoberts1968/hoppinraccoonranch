@@ -1,9 +1,12 @@
 import React from 'react';
+import { Link } from 'wouter';
+import { motion } from 'framer-motion';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+
 
 const HomePage: React.FC = () => {
   return (
-    <div className="space-y-6">
+    <div className="space-y-12">
       {/* Hero Section */}
       <section 
         id="hero" 
@@ -53,113 +56,71 @@ const HomePage: React.FC = () => {
 
 
 
-      <section id="about" className="about section bg-green-50 py-16">
-  <div className="container section-title text-center" data-aos="fade-up">
-    <div className="hero-img" data-aos="zoom-out" data-aos-delay="200">
-      <h2 className="text-4xl font-semibold text-green-700">About Hoppinracoon Ranch</h2>
-      <br />
-    </div>
-  </div>
-  <div className="container">
-    <div className="flex flex-col lg:flex-row items-center justify-center gap-12"> {/* Adjusted gap to 12 */}
-    
-      <div className="flex-1" data-aos="fade-up" data-aos-delay="100">
-        <div className="px-4"> {/* Added padding to the sides */}
-          <img 
-            src="img/herb.jpg" 
-            alt="Herb Product 1" 
-            className="w-full h-[400px] object-cover rounded-t-lg" 
-          />
+  
+ {/* About Section */}
+ <section id="about" className="py-16 bg-gray-100 text-center">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-4xl font-bold text-green-700">About Hoppin Raccoon Ranch</h2>
+          <p className="mt-4 text-lg text-gray-700">We are dedicated to growing premium, organic hops for craft breweries and home brewers. Our commitment to sustainability and quality ensures the best brewing experience.</p>
+          <img src="img/hop-field.jpg" alt="Hop Field" className="mt-6 w-full h-80 object-cover rounded-lg" />
         </div>
-      </div>
+      </section>
 
-      <div className="flex-1 text-center lg:text-left" data-aos="fade-up" data-aos-delay="200">
-        <h2 className="text-3xl font-semibold text-green-600">Our Vision</h2>
-        <p className="text-lg text-gray-700 mt-4">
-          Our vision is to become a trusted name in the herbal industry, known for our commitment to quality, sustainability, and holistic health. We aspire to cultivate a community of wellness seekers who turn to nature for healing and care. By offering a variety of herbal products, we aim to promote a balanced and healthy lifestyle for all.
-        </p>
-        <a href="#services" className="read-more text-green-600 font-semibold mt-6 inline-block hover:underline">
-          <span>Discover Our Herbal Offerings</span> <i className="bi bi-arrow-right"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-      {/* About Us, Products, Visit Us Sections */}
-      <div className="space-y-6">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      
-      {/* About Us, Products, Visit Us Sections */}
-      
-        {/* About Us */}
-        <Card>
-          <CardHeader>
-            <CardTitle>Our Story</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p>We are dedicated to providing high-quality, natural herbs that promote wellness and health. Our goal is to offer the finest herbal products sourced from nature.</p>
-          </CardContent>
-        </Card>
-
-        {/* Products */}
-        <Card>
-          <CardHeader>
-            <CardTitle>Our Products</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p>Explore our wide range of herbs and natural products for your health and healing. We offer various teas, tinctures, and oils to support your wellness journey.</p>
-            <a href="#products" className="text-green-500 hover:text-green-600 font-semibold">See Our Products</a>
-          </CardContent>
-        </Card>
-
-        {/* Visit Us */}
-        <Card>
-          <CardHeader>
-            <CardTitle>Visit Us</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p>Come visit our store to explore our products and learn more about our natural herbs. Our friendly staff will guide you through our offerings.</p>
-          </CardContent>
-        </Card>
-      
-    </div>
-      </div>
-
-      {/* Our Products Section */}
-      <section id="products" className="py-16 bg-gray-100">
-        <div className="container text-center">
-          <h2 className="text-3xl font-bold mb-8">Our Products</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Product 1 */}
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-              <img src="img/herb.jpg" alt="Herb Product 1" className="w-full h-48 object-cover rounded-t-lg" />
-              <h3 className="mt-4 text-xl font-semibold">Herb Product 1</h3>
-              <p className="text-gray-600 mt-2">A high-quality herb for your wellness.</p>
-              <a href="#buy" className="mt-4 inline-block text-green-500 hover:text-green-600 font-semibold">Buy Now</a>
-            </div>
-
-            {/* Product 2 */}
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-              <img src="img/herb.jpg" alt="Herb Product 2" className="w-full h-48 object-cover rounded-t-lg" />
-              <h3 className="mt-4 text-xl font-semibold">Herb Product 2</h3>
-              <p className="text-gray-600 mt-2">An essential herb for natural healing.</p>
-              <a href="#buy" className="mt-4 inline-block text-green-500 hover:text-green-600 font-semibold">Buy Now</a>
-            </div>
-
-            {/* Product 3 */}
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-              <img src="img/herb.jpg" alt="Herb Product 3" className="w-full h-48 object-cover rounded-t-lg" />
-              <h3 className="mt-4 text-xl font-semibold">Herb Product 3</h3>
-              <p className="text-gray-600 mt-2">Perfect for daily health benefits.</p>
-              <a href="#buy" className="mt-4 inline-block text-green-500 hover:text-green-600 font-semibold">Buy Now</a>
-            </div>
+      {/* Products Section */}
+      <section id="products" className="py-16 bg-white text-center">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-4xl font-bold text-green-700">Our Hop Varieties</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+            {["Cascade", "Citra", "Mosaic"].map((hop) => (
+              <Card key={hop} className="shadow-lg">
+                <CardHeader>
+                  <img src={`/img/${hop.toLowerCase()}.jpg`} alt={`${hop} Hops`} className="w-full h-48 object-cover rounded-t-lg" />
+                </CardHeader>
+                <CardContent>
+                  <CardTitle>{hop} Hops</CardTitle>
+                  <p className="mt-2 text-gray-600">Perfect for craft brewing with unique aroma and taste.</p>
+                  <Link href="/shop" className="mt-4 inline-block px-4 py-2 bg-green-600 text-white rounded-md">Buy Now</Link>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
+
+      {/* Why Choose Us Section */}
+      <section className="py-16 bg-green-700 text-white text-center">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-4xl font-bold">Why Choose Us?</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+            {["Organic & Sustainable", "Premium Quality", "Fast Shipping"].map((feature, index) => (
+              <motion.div 
+                key={index} 
+                className="p-6 bg-white text-green-700 rounded-lg shadow-md"
+                whileHover={{ scale: 1.05 }}
+              >
+                <h3 className="text-2xl font-semibold">{feature}</h3>
+                <p className="mt-2 text-gray-600">High standards to ensure the best brewing experience.</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact & Newsletter Section */}
+      <section className="py-16 bg-gray-100 text-center">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-4xl font-bold text-green-700">Stay Updated</h2>
+          <p className="mt-4 text-lg text-gray-700">Subscribe to get the latest hop harvest updates and special deals.</p>
+          <form className="mt-6 flex justify-center">
+            <input type="email" placeholder="Enter your email" className="px-4 py-2 rounded-l-full text-black border border-gray-300 w-64" required />
+            <button type="submit" className="px-6 py-2 bg-green-600 hover:bg-green-700 text-white rounded-r-full">Subscribe</button>
+          </form>
+        </div>
+      </section>
+
+
+
+    
     </div>
   );
 }
