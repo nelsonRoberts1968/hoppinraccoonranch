@@ -8,24 +8,24 @@ const HomePage: React.FC = () => {
   return (
     <div className="space-y-12">
       {/* Hero Section */}
-      <section 
-        id="hero" 
-        className="hero section dark-background relative h-screen flex items-center justify-center text-white text-center bg-cover bg-center bg-fixed" 
+      <section
+        id="hero"
+        className="hero section dark-background relative h-screen flex items-center justify-center text-white text-center bg-cover bg-center bg-fixed"
         style={{ backgroundImage: 'url(/img/herb.jpg)' }} // Image from public folder
       >
         {/* Overlay for better text visibility */}
         <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
 
         <div className="container relative z-10 flex flex-col justify-center text-center">
-        <a href="/" className="d-flex align-items-center justify-center">
-  <span className="sitename">
-    <img 
-      src="img/logoracoon.jpg" 
-      alt="Herbal Store Logo" 
-      className="w-24 h-24 animate-bounce-slow" 
-    />
-  </span>
-</a>
+          <a href="/" className="d-flex align-items-center justify-center">
+            <span className="sitename">
+              <img
+                src="img/logoracoon.jpg"
+                alt="Herbal Store Logo"
+                className="w-24 h-24 animate-bounce-slow"
+              />
+            </span>
+          </a>
 
           <h2 className="text-4xl font-bold text-shadow-md" data-aos="fade-up" data-aos-delay="100">
             Welcome to Our Herbal Store
@@ -42,10 +42,10 @@ const HomePage: React.FC = () => {
           {/* Newsletter Section */}
           <div className="mt-8" data-aos="fade-up" data-aos-delay="300">
             <form className="flex justify-center items-center">
-              <input 
-                type="email" 
-                placeholder="Enter your email" 
-                className="px-4 py-2 rounded-l-full text-black" 
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="px-4 py-2 rounded-l-full text-black"
                 required
               />
               <button type="submit" className="px-6 py-2 bg-green-500 hover:bg-green-600 rounded-r-full text-white">Subscribe</button>
@@ -56,9 +56,9 @@ const HomePage: React.FC = () => {
 
 
 
-  
- {/* About Section */}
- <section id="about" className="py-16 bg-gray-100 text-center">
+
+      {/* About Section */}
+      <section id="about" className="py-16 bg-gray-100 text-center">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-4xl font-bold text-green-700">About Hoppin Raccoon Ranch</h2>
           <p className="mt-4 text-lg text-gray-700">We are dedicated to growing premium, organic hops for craft breweries and home brewers. Our commitment to sustainability and quality ensures the best brewing experience.</p>
@@ -93,8 +93,8 @@ const HomePage: React.FC = () => {
           <h2 className="text-4xl font-bold">Why Choose Us?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
             {["Organic & Sustainable", "Premium Quality", "Fast Shipping"].map((feature, index) => (
-              <motion.div 
-                key={index} 
+              <motion.div
+                key={index}
                 className="p-6 bg-white text-green-700 rounded-lg shadow-md"
                 whileHover={{ scale: 1.05 }}
               >
@@ -120,7 +120,7 @@ const HomePage: React.FC = () => {
 
 
 
-    
+
     </div>
   );
 }

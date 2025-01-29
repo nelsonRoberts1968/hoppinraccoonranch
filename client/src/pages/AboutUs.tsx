@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { useLocation } from 'wouter';
 
-const Faqs: React.FC = () => {
+const AboutUs: React.FC = () => {
   const [location] = useLocation();
   const pageTitle = location.replace('/', '').toUpperCase() || 'HOME';
 
@@ -28,4 +28,4 @@ const Faqs: React.FC = () => {
   );
 };
 
-export default Faqs;
+export default AboutUs;
