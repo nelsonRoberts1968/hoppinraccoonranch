@@ -23,7 +23,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
           <Link href="/products" className="px-2 py-1 hover:bg-accent rounded-md">Our Products</Link>
 
           <Link href="/contact-us" className="px-2 py-1 hover:bg-accent rounded-md">Contact Us</Link>
-          <Link href="/shop" className="px-2 py-1 hover:bg-accent rounded-md">Shop Now</Link>
+          <Link href="/shop" className="px-2 py-1 hover:bg-accent rounded-md">Gallery</Link>
           <Link href="/faqs" className="px-2 py-1 hover:bg-accent rounded-md">FAQs</Link>
 
           <button className="p-2 hover:bg-accent rounded-full">

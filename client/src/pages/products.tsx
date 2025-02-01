@@ -39,7 +39,23 @@ const HopsCatalog = () => {
   );
 
   return (
-    <div className="container mx-auto p-6">
+
+ 
+ 
+
+    
+
+
+
+<div className="flex flex-col items-center w-full">
+      {/* Hero Section */}
+      <section className="relative w-full h-64 bg-cover bg-center" style={{ backgroundImage: "url('/assets/img/pencil.jpg')" }}>
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+          <h1 className="text-white text-3xl md:text-5xl font-bold">Our Products</h1>
+        </div>
+      </section>
+
+      <div className="container mx-auto p-6">
       <h1 className="text-4xl font-bold mb-6">Hop Catalog</h1>
       <Input
         placeholder="Search Hop Name"
@@ -74,6 +90,10 @@ const HopsCatalog = () => {
         ))}
       </div>
     </div>
+
+     
+    </div>
+   
   );
 };
 
