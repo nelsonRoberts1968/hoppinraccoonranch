@@ -26,6 +26,9 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
           <Link href="/shop" className="px-2 py-1 hover:bg-accent rounded-md">Gallery</Link>
           <Link href="/faqs" className="px-2 py-1 hover:bg-accent rounded-md">FAQs</Link>
 
+          <Link href="/login" className="px-2 py-1 hover:bg-accent rounded-md">Login</Link>
+          <Link href="/signup" className="px-2 py-1 hover:bg-accent rounded-md">Signup</Link>
+
           <button className="p-2 hover:bg-accent rounded-full">
             <Bell className="h-5 w-5" />
           </button>
