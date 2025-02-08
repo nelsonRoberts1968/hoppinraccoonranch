@@ -62,7 +62,7 @@ const HomePage: React.FC = () => {
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-4xl font-bold text-green-700">About Hoppin Raccoon Ranch</h2>
           <p className="mt-4 text-lg text-gray-700">We are dedicated to growing premium, organic hops for craft breweries and home brewers. Our commitment to sustainability and quality ensures the best brewing experience.</p>
-          <img src="img/hop-field.jpg" alt="Hop Field" className="mt-6 w-full h-80 object-cover rounded-lg" />
+          <img src="img/2.jpg" alt="Hop Field" className="mt-6 w-full h-80 object-cover rounded-lg" />
         </div>
       </section>
 
@@ -74,7 +74,7 @@ const HomePage: React.FC = () => {
             {["Cascade", "Citra", "Mosaic"].map((hop) => (
               <Card key={hop} className="shadow-lg">
                 <CardHeader>
-                  <img src={`/img/${hop.toLowerCase()}.jpg`} alt={`${hop} Hops`} className="w-full h-48 object-cover rounded-t-lg" />
+                  <img src={`/img/1.jpg`} alt={`${hop} Hops`} className="w-full h-48 object-cover rounded-t-lg" />
                 </CardHeader>
                 <CardContent>
                   <CardTitle>{hop} Hops</CardTitle>

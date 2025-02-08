@@ -2,12 +2,12 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const images = [
-  "/images/gallery1.jpg",
-  "/images/gallery2.jpg",
-  "/images/gallery3.jpg",
-  "/images/gallery4.jpg",
-  "/images/gallery5.jpg",
-  "/images/gallery6.jpg",
+  "/img/2.jpg",
+  "/img/3.jpg",
+  "/img/4.jpg",
+  "/img/7.jpg",
+  "/img/5.jpg",
+  "/img/8.jpg",
 ];
 
 const GalleryPage: React.FC = () => {
