@@ -7,7 +7,11 @@ const Signup: React.FC = () => {
     const [location] = useLocation();
     const pageTitle = location.replace("/", "").toUpperCase() || "HOME";
 
-    const [formData, setFormData] = useState({ username: "", password: "" });
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        password: "",
+    });
     const [error, setError] = useState("");
     const [loading, setLoading] = useState(false);
 
@@ -21,7 +25,7 @@ const Signup: React.FC = () => {
         setError("");
 
         try {
-            const response = await fetch("/api/auth/signup", {
+            const response = await fetch("http://localhost:8001/api/register", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData),
@@ -30,14 +34,17 @@ const Signup: React.FC = () => {
             const data = await response.json();
             if (!response.ok) throw new Error(data.message || "Signup failed");
 
+            alert("Signup successful! Redirecting...");
             window.location.href = "/login"; // Redirect after signup
         } catch (err) {
             if (err instanceof Error) {
-              setError(err.message);
+                setError(err.message);
             } else {
-              setError("An unknown error occurred.");
+                setError("An unknown error occurred.");
             }
-          }
+        } finally {
+            setLoading(false);
+        }
     };
 
     return (
@@ -57,15 +64,27 @@ const Signup: React.FC = () => {
                         <CardContent>
                             <form onSubmit={handleSubmit} className="space-y-4">
                                 {error && <p className="text-red-500 text-sm">{error}</p>}
+                                
                                 <input
                                     type="text"
-                                    name="username"
-                                    placeholder="Username"
-                                    value={formData.username}
+                                    name="name"
+                                    placeholder="Full Name"
+                                    value={formData.name}
                                     onChange={handleChange}
                                     className="w-full p-3 border rounded-md"
                                     required
                                 />
+
+                                <input
+                                    type="email"
+                                    name="email"
+                                    placeholder="Email"
+                                    value={formData.email}
+                                    onChange={handleChange}
+                                    className="w-full p-3 border rounded-md"
+                                    required
+                                />
+
                                 <input
                                     type="password"
                                     name="password"
@@ -75,6 +94,7 @@ const Signup: React.FC = () => {
                                     className="w-full p-3 border rounded-md"
                                     required
                                 />
+
                                 <button type="submit" className="w-full bg-green-600 text-white py-3 rounded-md hover:bg-green-700">
                                     {loading ? "Signing up..." : "Sign Up"}
                                 </button>

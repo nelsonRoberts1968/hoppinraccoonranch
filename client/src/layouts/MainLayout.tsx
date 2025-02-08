@@ -27,7 +27,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
             <Link href="/shop" className="px-3 py-2 hover:bg-gray-200 rounded-md">Gallery</Link>
             <Link href="/faqs" className="px-3 py-2 hover:bg-gray-200 rounded-md">FAQs</Link>
             <Link href="/login" className="px-3 py-2 hover:bg-gray-200 rounded-md">Login</Link>
-            <Link href="/singup" className="px-3 py-2 hover:bg-gray-200 rounded-md">Signup</Link>
+            <Link href="/signup" className="px-3 py-2 hover:bg-gray-200 rounded-md">Signup</Link>
           </nav>
 
           {/* 🟢 Icons */}
