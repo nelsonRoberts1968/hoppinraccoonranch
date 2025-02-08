@@ -4,7 +4,7 @@ import MainLayout from '@/layouts/MainLayout';
 import HomePage from '@/pages/HomePage';
 import ShopPage from '@/pages/shop';
 import ProductsPage from '@/pages/products';
-import FaqsPage from '@/pages/Faqs';
+import FaqsPage from '@/pages/faqs';
 import ContactUsPage from '@/pages/contactus';
 import AboutUsPage from '@/pages/AboutUs';
 import LoginPage from '@/pages/Login';
