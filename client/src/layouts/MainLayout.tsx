@@ -26,6 +26,8 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
             <Link href="/contact-us" className="px-3 py-2 hover:bg-gray-200 rounded-md">Contact Us</Link>
             <Link href="/shop" className="px-3 py-2 hover:bg-gray-200 rounded-md">Gallery</Link>
             <Link href="/faqs" className="px-3 py-2 hover:bg-gray-200 rounded-md">FAQs</Link>
+            <Link href="/login" className="px-3 py-2 hover:bg-gray-200 rounded-md">Login</Link>
+            <Link href="/signup" className="px-3 py-2 hover:bg-gray-200 rounded-md">Signup</Link>
           </nav>
 
           {/* 🟢 Icons */}
@@ -62,6 +64,8 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
                     <Link href="/contact-us" className="px-3 py-2 hover:bg-gray-200 rounded-md">Contact Us</Link>
                     <Link href="/shop" className="px-3 py-2 hover:bg-gray-200 rounded-md">Gallery</Link>
                     <Link href="/faqs" className="px-3 py-2 hover:bg-gray-200 rounded-md">FAQs</Link>
+                    <Link href="/login" className="px-3 py-2 hover:bg-gray-200 rounded-md">Login</Link>
+                    <Link href="/signup" className="px-3 py-2 hover:bg-gray-200 rounded-md">Signup</Link>
                   </nav>
                 </div>
               </SheetContent>
