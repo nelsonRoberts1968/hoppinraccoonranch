@@ -25,7 +25,7 @@ const Signup: React.FC = () => {
         setError("");
 
         try {
-            const response = await fetch("http://localhost:8001/api/register", {
+            const response = await fetch("https://hrr.kennedysbicycleclub.co.tz/api/register", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData),
