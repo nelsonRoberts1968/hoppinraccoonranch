@@ -21,8 +21,8 @@ const ContactUs: React.FC = () => {
       {/* Contact Info Section */}
       <section className="container mx-auto px-6 py-12">
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-gray-800">Get in Touch</h2>
-          <p className="text-gray-600">Have any questions? We are happy to help!</p>
+          <h2 className="text-3xl font-bold text-white">Get in Touch</h2>
+          <p className="text-white">Have any questions? We are happy to help!</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -31,24 +31,24 @@ const ContactUs: React.FC = () => {
             <div className="flex items-center space-x-4">
               <i className="bi bi-geo-alt text-green-600 text-3xl"></i>
               <div>
-                <h3 className="text-lg font-semibold text-gray-800">Address</h3>
-                <p className="text-gray-600">Block 41, Calfonia, US</p>
+                <h3 className="text-lg font-semibold text-white">Address</h3>
+                <p className="text-white">Block 41, Calfonia, US</p>
               </div>
             </div>
 
             <div className="flex items-center space-x-4">
               <i className="bi bi-telephone text-green-600 text-3xl"></i>
               <div>
-                <h3 className="text-lg font-semibold text-gray-800">Call Us</h3>
-                <p className="text-gray-600">+255 742 177 051</p>
+                <h3 className="text-lg font-semibold text-white">Call Us</h3>
+                <p className="text-white">+255 742 177 051</p>
               </div>
             </div>
 
             <div className="flex items-center space-x-4">
               <i className="bi bi-envelope text-green-600 text-3xl"></i>
               <div>
-                <h3 className="text-lg font-semibold text-gray-800">Email Us</h3>
-                <p className="text-gray-600">info@hoppinracoon.com</p>
+                <h3 className="text-lg font-semibold text-white">Email Us</h3>
+                <p className="text-white">info@hoppinracoon.com</p>
               </div>
             </div>
           </div>

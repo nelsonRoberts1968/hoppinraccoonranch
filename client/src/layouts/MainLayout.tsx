@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "wouter"; // Ensure Wouter is properly installed
-import { Menu, Bell, Settings, User } from "lucide-react";
+import { Menu, Bell, Settings, User, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 interface MainLayoutProps {
@@ -84,11 +84,49 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
       <main className="flex-1 p-6 mt-16">{children}</main>
 
       {/* 🟢 Footer */}
-      <footer id="footer" className="footer bg-[#4CAF50] text-white py-10">
-        <div className="container footer-top px-6 sm:px-12 lg:px-16">
-          {/* Footer sections */}
+      <footer className="bg-green-700 text-white py-10 mt-10">
+        <div className="container mx-auto px-6 sm:px-12 lg:px-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          
+          {/* Company Info */}
+          <div>
+            <h3 className="text-xl font-bold">Hoppin Raccoon</h3>
+            <p className="mt-2 text-gray-300">We bring you the best hopping experience with our innovative products.</p>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-xl font-bold">Quick Links</h3>
+            <ul className="mt-2 space-y-2">
+              <li><Link href="/" className="hover:text-gray-300">Home</Link></li>
+              <li><Link href="/products" className="hover:text-gray-300">Our Products</Link></li>
+              <li><Link href="/contact-us" className="hover:text-gray-300">Contact Us</Link></li>
+              <li><Link href="/faqs" className="hover:text-gray-300">FAQs</Link></li>
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h3 className="text-xl font-bold">Contact Us</h3>
+            <p className="mt-2">📍 Block 41, Calfonia, US</p>
+            <p>📞 +255 742 177 051</p>
+            <p>📧 info@hoppinracoon.com</p>
+          </div>
+
+          {/* Social Media */}
+          <div>
+            <h3 className="text-xl font-bold">Follow Us</h3>
+            <div className="flex space-x-4 mt-3">
+              <a href="#" className="hover:text-gray-300"><Facebook className="h-6 w-6" /></a>
+              <a href="#" className="hover:text-gray-300"><Twitter className="h-6 w-6" /></a>
+              <a href="#" className="hover:text-gray-300"><Instagram className="h-6 w-6" /></a>
+              <a href="#" className="hover:text-gray-300"><Linkedin className="h-6 w-6" /></a>
+            </div>
+          </div>
+
         </div>
-        {/* Copyright section */}
+        <div className="text-center text-sm text-gray-300 mt-6">
+          © {new Date().getFullYear()} Hoppin Raccoon. All rights reserved. Developed By <Link href="https://www.valleypayapp.com/" className="hover:text-gray-300">Valleypay Inc.</Link>
+        </div>
       </footer>
     </div>
   );
